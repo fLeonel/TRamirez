@@ -30,6 +30,20 @@ export default function Home() {
       image: "/assets/Pana-conoce.jpg",
       link: "/destinations/panajachel",
     },
+    Chichicastenango: {
+      title: "Conoce Chichicastenango",
+      description:
+        "Chichicastenango, un lugar que se caracteriza por sus colores vivos y sus festivales que transmiten cultura y tradición",
+      image: "/assets/chichi-conoce.jpg",
+      link: "/destinations/panajachel",
+    },
+    Rio: {
+      title: "Conoce el Castillo de San Felipe",
+      description:
+        "Chichicastenango, un lugar que se caracteriza por sus colores vivos y sus festivales que transmiten cultura y tradición",
+      image: "/assets/CastilloSF-conoce.jpg",
+      link: "/destinations/rio_dulce",
+    },
   };
 
   const handleDestinationChange = (direction: string) => {
