@@ -15,9 +15,9 @@ const WhatsappIcon = () => {
       >
         <Image
           src="/assets/whatsapp-icon.png"
-          alt=""
-          width={350}
-          height={350}
+          alt="whatsapp"
+          width={35}
+          height={35}
           className="w-10 h-10"
         />
       </Link>
