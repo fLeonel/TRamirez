@@ -14,35 +14,35 @@ export default function Home() {
       description:
         "Antigua Guatemala es un destino lleno de historia, cultura y belleza. Explora sus calles empedradas, disfruta de su arquitectura colonial y vive una experiencia inolvidable con nuestros servicios de transporte ejecutivo y turístico.",
       image: "/assets/Antigua-conoce.jpg",
-      link: "/destinations/antigua",
+      link: "/pages/destinations/antigua/",
     },
     Peten: {
       title: "Conoce Petén",
       description:
         "Petén es un lugar con mucha cultura Maya. Guarda secretos que hasta la fecha siguen ocultos, vive la experiencia de conocer sobre la historia de nuestros antepasados.",
       image: "/assets/Tikal-conoce.jpg",
-      link: "/destinations/peten",
+      link: "/pages/destinations/Tikal/",
     },
     Panajachel: {
       title: "Conoce Panajachel",
       description:
         "Panajachel, el corazón del Lago de Atitlán, te ofrece paisajes impresionantes y una conexión única con la naturaleza y las tradiciones mayas. ¡Es un destino que no te puedes perder!",
       image: "/assets/Pana-conoce.jpg",
-      link: "/destinations/panajachel",
+      link: "/pages/destinations/panajachel/",
     },
     Chichicastenango: {
       title: "Conoce Chichicastenango",
       description:
-        "Chichicastenango, un lugar que se caracteriza por sus colores vivos y sus festivales que transmiten cultura y tradición",
+        "Chichicastenango, un lugar que se caracteriza por sus colores vivos y sus festivales que transmiten cultura y tradición.",
       image: "/assets/chichi-conoce.jpg",
-      link: "/destinations/panajachel",
+      link: "/pages/destinations/Chichi/",
     },
     Rio: {
       title: "Conoce el Castillo de San Felipe",
       description:
-        "Chichicastenango, un lugar que se caracteriza por sus colores vivos y sus festivales que transmiten cultura y tradición",
+        "El Castillo de San Felipe de Lara es un emblema de la historia colonial de Guatemala. Su belleza y ubicación lo hacen un destino único.",
       image: "/assets/CastilloSF-conoce.jpg",
-      link: "/destinations/rio_dulce",
+      link: "/pages/destinations/RioDulce",
     },
   };
 
@@ -62,18 +62,21 @@ export default function Home() {
       {/* Header con el Carousel */}
       <header className="relative">
         <Carousel />
-        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-30">
-          <h1 className="text-white text-4xl font-bold">
-            ¡Are you ready to know Guatemala?!
+        <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black bg-opacity-20">
+          <h1 className="text-white text-10xl font-bold" style={{ fontFamily: "Georgia, serif" }}>
+            ¡Conoce Guatemala!
           </h1>
+          <h3 className="text-yellow text-lg mt-2" style={{ fontFamily: "Roboto, sans-serif" }}>
+            "El país de la eterna primavera"
+          </h3>
         </div>
       </header>
 
       {/* Sección Conoce */}
-      <section className="py-16 px-8 bg-purple text-white">
+      <section className="py-16 px-20 bg-white text-black">
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Imagen */}
-          <div className="relative h-[600px] w-full">
+          <div className="relative h-[700px] w-full animate-fade-in-up">
             <Image
               src={destinations[selectedDestination].image}
               alt={destinations[selectedDestination].title}
@@ -83,7 +86,7 @@ export default function Home() {
           </div>
           {/* Contenido */}
           <div>
-            <h2 className="text-3xl font-bold mb-4 text-center md:text-left">
+            <h2 className="text-4xl font-bold mb-4 text-center md:text-left">
               {destinations[selectedDestination].title}
             </h2>
             <p className="text-lg leading-7 mb-6">
@@ -110,13 +113,6 @@ export default function Home() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <div>
-          <h1 className="text-white">
-            Esta es una prueba
-          </h1>
         </div>
       </section>
     </main>
