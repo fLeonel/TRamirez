@@ -1,4 +1,5 @@
 "use client";
+
 import Link from "next/link";
 import { useState } from "react";
 
@@ -30,16 +31,19 @@ export default function Header() {
 
         {/* Navegación Desktop */}
         <nav className="hidden md:flex space-x-6">
-          <Link href="/about" className="text-yellow hover:text-teal">
+          <Link href="/" className="text-yellow hover:text-teal">
+            Inicio
+          </Link>
+          <Link href="/pages/presentations/aboutus" className="text-yellow hover:text-teal">
             Sobre Nosotros
           </Link>
-          <Link href="/tourism" className="text-yellow hover:text-teal">
+          <Link href="/pages/presentations/turismo" className="text-yellow hover:text-teal">
             Turismo
           </Link>
-          <Link href="/executives" className="text-yellow hover:text-teal">
+          <Link href="/pages/presentations/ejecutivos" className="text-yellow hover:text-teal">
             Ejecutivos
           </Link>
-          <Link href="/contact" className="text-yellow hover:text-teal">
+          <Link href="/pages/presentations/contact" className="text-yellow hover:text-teal">
             Contáctanos
           </Link>
         </nav>
@@ -73,28 +77,35 @@ export default function Header() {
         <div className="md:hidden bg-dark-purple shadow-md border-t border-purple">
           <nav className="flex flex-col space-y-2 px-4 py-2">
             <Link
-              href="/about"
+              href="/"
+              className="text-yellow hover:text-teal"
+              onClick={() => setMenuOpen(false)}
+            >
+              Inicio
+            </Link>
+            <Link
+              href="/pages/presentations/aboutus"
               className="text-yellow hover:text-teal"
               onClick={() => setMenuOpen(false)}
             >
               Sobre Nosotros
             </Link>
             <Link
-              href="/tourism"
+              href="/pages/presentations/turismo"
               className="text-yellow hover:text-teal"
               onClick={() => setMenuOpen(false)}
             >
               Turismo
             </Link>
             <Link
-              href="/executives"
+              href="/pages/presentations/ejecutivos"
               className="text-yellow hover:text-teal"
               onClick={() => setMenuOpen(false)}
             >
               Ejecutivos
             </Link>
             <Link
-              href="/contact"
+              href="/pages/presentations/contact"
               className="text-yellow hover:text-teal"
               onClick={() => setMenuOpen(false)}
             >

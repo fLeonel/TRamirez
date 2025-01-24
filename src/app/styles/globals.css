@@ -1,19 +1,15 @@
-/* Importar estilos externos primero */
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
 
-/* Estilos base de Tailwind */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Declaración de variables CSS globales */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-/* Variables específicas para el modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -21,7 +17,6 @@
   }
 }
 
-/* Estilos globales */
 body {
   color: var(--foreground);
   background: var(--background);
